@@ -11,13 +11,15 @@ const AppButton = ({ onPress, title}) => {
 };
 
 const App = () => {
+  state = {
+    string: 'E',
+  }
   return (
     <View style={styles.container}>
       <Header />
-      <Button title="Hey there!" size="sm" backgroundColor="#007bff" />
-
-      {/* <SelectBass />÷ */}
-      {/* <String /> */}
+      {/* <Button title="Hey there!" size="sm" backgroundColor="#007bff" /> */}
+      {/* <SelectBass /> */}
+      <String string={this.state.string}/>
     </View>
   );
 };
